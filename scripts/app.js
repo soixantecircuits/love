@@ -30,13 +30,14 @@ define(['fileupload', 'fileupload_iframe', 'jquery.ui.widget'], function() {
       dropZone: $('#love'),
       acceptFileTypes: /(\.|\/)(gif|jpe?g|png)$/i,
       add: function(e, data) {
-        data.context = $('<p/>').text('Uploading...').appendTo(document.body);
+        data.context = $('#thanks').text('Uploading...');
         console.log(data);
         data.submit();
       },
       done: function(e, data) {
         $.each(data.result, function(index, file) {
-          $('<p/>').text(file.name).appendTo(document.body);
+          //$('<p/>').text(file.name).appendTo(document.body);
+          $('#thanks').text('Thanks ! We will give you some !');
         });
       },
       progressall: function(e, data) {

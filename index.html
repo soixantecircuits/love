@@ -19,14 +19,17 @@
             <h1>Send us some love!</h1>
         </div>
         <p>Just drag and drop the image file on the little heart.</p>
-        <div class="dropzone fade well" id="love">
-          send your love here
+        <div class="dropzone well" id="love">
+          send your love here<br/>
+          <span class="big">❤</span>
            <form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
             <input id="fileupload" style="display:none" type="file" name="files[]" data-url="server/php/" multiple>
           </form>
         </div>
         <div id="progress">
           <div class="bar" style="width: 0%;"></div>
+        </div>
+        <div id="thanks">
         </div>
     </div>
 
