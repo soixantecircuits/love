@@ -38,3 +38,5 @@ dist
 ehthumbs.db
 Icon?
 Thumbs.db
+
+server/php/files/*
